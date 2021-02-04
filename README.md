@@ -1,6 +1,10 @@
 # conference-app
 
-Here will be some information about the app.
+A sample conference app built using Lightning Web Components Open Source(LWC-OSS). You can clone the app in a directory of your own and use "npm run watch" to see 
+the app in action on a localhost server. 
+
+The app leverages a REST API end point for fetching the data being displayed.
+
 
 ## How to start?
 
