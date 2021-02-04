@@ -1,0 +1,41 @@
+<!--<template>
+    
+    <div class="center greeting">
+        
+        <my-greeting speed="medium"></my-greeting>
+        
+    </div>
+
+    <div class="center">
+        <img src="./resources/lwc.png" />
+    </div>
+
+     
+    <div class="center">
+        <div class="container">
+            
+            <p class="info">
+                Edit <strong class="code">src/client/modules/my/app/app.html</strong>
+                <br />and save for live reload.
+            </p>
+        </div>
+        <div>
+            <a href="https://lwc.dev" class="link" target="_blank">Learn LWC</a>
+        </div>
+    </div>
+</template> -->
+<template>
+    <header>
+      <img src="resources/lwc.png" alt="App logo">
+      <h2>Lightning Conference</h2>
+    </header>
+    <main class="content">
+        <!--<my-session-list></my-session-list>-->
+        <template if:true={isStateList}>
+        <my-session-list onnavigate={handleNavigate}></my-session-list>
+        </template>
+        <template if:true={isStateDetails}>
+        <my-session-details onnavigate={handleNavigate} session-id={sessionId}></my-session-details>
+        </template>
+    </main>
+  </template>
